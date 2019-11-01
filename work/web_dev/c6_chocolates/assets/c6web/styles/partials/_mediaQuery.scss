@@ -1,0 +1,835 @@
+@media (max-width: 1300px) {
+
+	.source {
+		padding: 45px 55px;
+	}
+
+	h2 {
+		font-size: 5.6rem;
+	}
+
+	.customOrders {
+		margin-top: 430px;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	header p {
+		width: 45%;
+	}
+
+	h1 {
+		font-size: 6.8rem;
+	}
+
+	main h4 {
+		margin-top: 85px;
+	}
+
+	h3 {
+		font-size:2rem;
+	}
+	
+	.ourChocolates {
+	    background-size: 105%;
+	}
+
+	.ourChocolates::before {
+		height: 580px;
+	}
+
+	.ourChocolates .half {
+		margin-top: 100px;
+	}
+
+	.quality {
+		width: 28%;
+		height: 320px;
+		left: 60%;
+		padding: 50px 70px;
+	}
+
+	.source {
+		opacity: 0;
+	}
+
+	.ourChocolates .wrapperB {
+		height: 300px;
+	}
+
+	.customOrders {
+		margin-top: 350px;
+		padding-left: 26%;
+	}
+
+	.tellUs {
+		margin-top: 220px;
+		padding-top: 20px;
+	}
+
+	.about {
+		height: 600px;
+		margin-top: 20px;
+	}
+
+	.about a {
+		margin-top: 5px;
+	}
+
+	.about .half2 {
+		margin-bottom: 90px;
+	}
+}
+
+@media (max-width: 1100px) {
+	h1 {
+		font-size: 6.3rem;
+	}
+
+	.c6logo img {
+		width: 130px;
+	}
+
+	header p {
+		display: none;
+	}
+	
+	h3 {
+		font-size:2.2rem;
+	}
+
+	main h4 {
+		margin-top: 90px;
+	}
+
+	.shop .textQuarter {
+		height: 50%;
+	}
+
+	.addToCart {
+		margin: 0 20px 100px 0;
+	}
+
+	.ourChocolates {
+		background-position: center;
+		background-size: 110%;
+	}
+
+	.ourChocolates .half {
+		width: 45%;
+		margin-top: 80px;
+	}
+
+	h2 {
+		font-size: 5.2rem;
+		letter-spacing: 0.4rem;
+		line-height: 5.5rem;
+		padding-bottom: 4px;
+	}
+	
+	.tellUs .quarter {
+		height: 210px;
+	}
+
+	.about {
+		height: 530px;
+	}
+
+	.about .half1 {
+		width: 40%;
+		padding-top: 40px;
+	}
+
+	.about .half2 {
+		width: 60%;
+		padding-left: 60px;
+	}
+
+	.about h6 {
+		margin-bottom: 2%;
+	}
+
+	.about p:first-of-type {
+		margin-bottom: 6%;
+	}
+
+	.quarter {
+		width: calc(33.3%);
+		margin: 0 12px;
+	}
+	
+	.half1 {
+		width: calc(66.66% - 7px);
+	}
+
+	.half2 {
+		width: calc(33.33% - 19px);
+	}
+
+	.half2 img {
+		width: 100%;
+	}
+
+	.shop .quarter {
+		width: calc(50% - 16px);
+	}
+
+	.half4 {
+		display: block;
+	}
+
+	.about a {
+		padding-bottom: 7px;
+	}
+
+	.tellUs figure:hover figcaption {
+		height: 60%;
+	}
+}
+
+@media (max-width: 1055px) {
+	.addToCart {
+		margin: 0 20px 120px 0;
+	}
+}
+
+@media (max-width: 990px) {
+	
+	.c6logo img {
+		width: 150px;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+		padding-right: 25px;
+	}
+
+	h1 {
+		font-size: 5.2rem;
+	}
+
+	h3 {
+		font-size:2rem;
+	}
+
+	main h4 {
+		margin-top: 75px;
+	}
+
+	.addToCart {
+		margin: 0 20px 80px 0;
+	}
+
+	.optional {
+		display: none;
+	}
+
+	.quarter:nth-of-type(2) {
+		margin-right: 0;
+	}
+
+	.productDescription {
+		display: none;
+	}
+	
+	h2 {
+		font-size: 4.8rem;
+		line-height: 5rem;
+	}
+
+	.ourChocolates {
+	    background-size: 110%;
+	}
+
+	.ourChocolates p {
+		font-size: 1.6rem;
+	}
+	
+	.quality {
+		left: 55%;
+		width: 35%;
+		height: 300px;
+		padding: 70px 50px;
+	}
+
+	.quality .line {
+		margin: 12px 0;
+	}
+
+	.ourChocolates .wrapperB {
+		height: 340px;
+	}
+	
+	.ourChocolates a,
+	.customOrders a,
+	.about a {
+		margin-top: 20px;
+	}
+
+	.customOrders {
+		margin-top: 280px;
+	}
+
+	.tellUs {
+		margin-top: 170px;
+	}
+
+	.tellUs .email {
+		display: none;
+	}
+
+	.quarter {
+		width: calc(33.33% - 20px);
+	}
+
+	.tellUs .quarter {
+		width: calc(33.33% - 15px);
+	}
+
+	.tellUs .quarter:nth-of-type(2) {
+		margin-right: 15px;
+	}
+
+	.about {
+		height: 580px;
+	}
+}
+
+@media (max-width: 900px) {
+	.ourChocolates {
+	    background-size: 140%;
+	}
+
+	.about .half2 {
+		margin-top: 65px;
+	}
+
+	.about a {
+		margin-top: 0;
+	}
+
+	main h4 {
+		margin-top: 70px;
+	}
+
+	.customOrders {
+		margin-top: 300px;
+	}
+}
+
+@media (max-width: 810px) {
+	.wrapperB {
+		width: 66%;
+	}
+
+	.c6logo img {
+		margin-top: 20px;
+	}
+
+	header h1 {
+		text-shadow: 1px 1px 4px black;
+	}
+	
+	header h3 {
+		text-shadow: 1px 1px 4px black;
+	}
+
+	.addToCart {
+		margin: 0 20px 70px 0;
+	}
+
+	.quality {
+		opacity: 0;
+	}
+
+	h2 {
+		font-size: 4rem;
+		line-height: 4.3rem;
+	}
+
+	.ourChocolates {
+	    background-size: 155%;
+	}
+
+	.ourChocolates::before {
+		height: 540px;
+	}
+
+	.ourChocolates .half {
+		margin-top: 80px;
+		width: 70%;
+	}
+
+	.customOrders {
+		margin-top: 270px;
+		padding-left: 14%;
+	}
+
+	.customOrders a {
+		margin-top: 30px;
+		padding-bottom: 7px;
+	}
+
+	.tellUs.wrapperB {
+		margin-top: 100px;
+		padding-top: 50px;
+	}
+
+	.tellUs .quarter {
+		width: 100%;
+		margin: 0;
+	}
+
+	.tellUs .quarter:nth-of-type(1) {
+		margin-right: 15px;
+	}
+
+	.tellUs .quarter:nth-of-type(2) {
+		margin-left: 15px;
+	}
+
+	.tellUs .quarter:nth-of-type(3) {
+		display: none;
+	}
+
+	.tellUs figure:hover figcaption {
+		height: 60%;
+	}
+	
+	.about {
+		height: 420px;
+		margin-top: 50px;
+	}
+
+	.about .wrapperB {
+		width: 100%;
+	}
+	
+	.about .half {
+		padding-top: 0;
+	}
+
+	.about .half2 {
+		margin-right: 10%;
+		width: 50%;
+	}
+	
+	.benny {
+		display: none;
+	}
+
+	.subscribe {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+
+	.subscribe button {
+		margin-bottom: 20px;
+	}
+	
+	main h4 {
+		margin-top: 90px;
+	}
+
+	.feature {
+		flex-wrap: wrap;
+	}
+
+	.optional {
+		display: block;
+	}
+
+	.quarter {
+		width: calc(50% - 17px);
+		margin-bottom: 30px;
+	}
+
+	.quarter:nth-of-type(1) {
+		margin-right: 0;
+	}
+
+	.quarter:nth-of-type(2) {
+		margin-left: 0;
+	}
+
+	.feature figcaption {
+		margin-top: 10px;
+	}
+
+	.divider {
+		margin-top: 35px;
+	}
+
+	.shop {
+		flex-direction: column;
+		margin: 80px 0;
+	}
+	
+	.shop figure {
+		margin: 0;
+	}
+	
+	.shop .quarter {
+		margin-bottom: 30px;
+	}
+
+	.shop .quarter:nth-of-type(1) {
+		margin-right: 0;
+	}
+
+	.shop .half {
+		width: 100%;
+		height: auto;
+		margin-right: 0;
+	}
+
+	.shop .half2 {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-left: 0;
+	}
+	
+	.shop .half3, 
+	.shop .half4 {
+		width: calc(50% - 17px);
+	}
+}
+
+@media (max-width: 650px) {
+
+	.arrow {
+		display: none;
+	}
+
+	.addToCart {
+		margin: 0 20px 90px 0;
+	}
+
+	main h4 {
+		margin-top: 60px;
+	}
+	
+	.ourChocolates {
+	    background-size: 190%;
+	}
+
+	.ourChocolates .half {
+		width: 100%;
+		margin-top: 100px;
+	}
+
+	.ourChocolates::before {
+		height: 520px;
+	}
+
+	.ourChocolates a {
+		color: $darkGrey;
+		border: 2px solid $darkGrey;
+	}
+
+	.customOrders {
+		padding-left: 10%;
+		margin-top: 290px;
+	}
+
+	.tellUs.wrapperB {
+	padding-top: 80px;
+	}
+
+	.quality {
+		opacity: 0;
+	}
+
+	.tellUs {
+		padding-top: 80px;
+	}
+
+	.about {
+		height: auto;
+	}
+
+	.about .wrapperB{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.about .half {
+		width: 100%;
+		margin: 0;
+	}
+
+	.about .half2 {
+		margin-top: 60px;
+		padding-right: 12%;
+		margin-bottom: 10%;
+	}
+
+	.about img {
+		height: auto;
+	}
+
+	.benny {
+		display: block;
+	}
+
+	.about a {
+		margin-top: 10px;
+	}
+
+	footer {
+		height: 390px;
+	}
+
+	footer .wrapperA {
+		flex-direction: column;
+		justify-content: flex-start;
+		margin: 0 auto;
+	}
+
+	.corporate, 
+	.subscribe {
+		width: 100%;
+	}
+
+	.subscribe,
+	.copyright.wrapperA {
+		margin: 30px 0 0 132px;
+		align-items: flex-start;
+	}
+
+	.social a:first-of-type {
+	    margin-left: 0;
+	}
+
+	.copyright.wrapperA{
+		margin: 30px 0 0 132px;
+		padding-left: 17px;
+	}
+
+	.copyright p {
+		text-align: left;
+		padding-left: 10px;
+		width: 60%;
+	}
+
+	.bottomNav {
+		margin-top: 40px;
+	}
+
+	p.companyName {
+		font-size: 1.8rem;
+	}
+
+	footer a {
+		font-size: 1.3rem;
+	}
+
+	.social a {
+		padding: 9px 7px 6px 9px;
+	}
+}
+
+@media (max-width: 600px) {
+	.c6logo img {
+		width: 110px;
+	}
+	
+	.wrapperB {
+		width: 43%;
+	}
+
+	.addToCart {
+		margin: 0 20px 70px 0;
+	}
+
+	main .feature {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.quarter {
+		width: 100%;
+		margin: 0;
+	}
+
+	main h4 {
+		margin-top: 20px;
+	}
+
+	.feature figure {
+		margin-top: 40px;
+	}
+
+	.feature figcaption {
+		margin-top: 10px;
+	}
+
+	.optional {
+		display: block;
+	}
+
+	.divider {
+		margin-top: 80px;
+	}
+
+	.shop {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.half1, 
+	.half2 {
+		width: 100%;
+		flex-wrap: no-wrap;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.shop .half3 {
+		width: 100%;
+	}
+	
+	.half4 {
+		display: none;
+	}
+
+	.shop .quarter {
+		width: 100%;
+		margin: 0 0 40px 0;
+	}
+
+	.shop .quarter1 {
+		margin-top: 0;
+	}
+
+	.half figure:nth-of-type(3) {
+		margin-bottom: 25px;
+	}
+
+	.quality {
+		opacity: 0;
+	}
+
+	.ourChocolates {
+	    background: none;
+	    padding-top: 10px;
+	    height: auto;
+	}
+
+	.ourChocolates::before {
+		height: 580px;
+	}
+
+	.ourChocolates .half {
+		margin-top: 70px;
+	}
+
+	.customOrders {
+		margin-top: 310px;
+		text-align: left;
+		padding: 0;
+		align-items: flex-start;
+	}
+
+	.customOrders a {
+		margin-top: 30px;
+	}
+
+	.tellUs {
+		flex-direction: column;
+		min-height: 900px;
+	}
+
+	.tellUs .quarter {
+		width: 100%;
+	}
+
+	.tellUs .quarter:nth-of-type(1),
+	.tellUs .quarter:nth-of-type(2),
+	.tellUs .quarter:nth-of-type(3) {
+		height: auto;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	.tellUs.wrapperB {
+		padding-top: 80px;
+	}
+
+	.tellUs .quarter:nth-of-type(3) {
+		display: block;
+	}
+	
+	.tellUs figure:hover figcaption {
+		height: 35%;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.wrapperB {
+		width: 55%;
+	}
+
+	footer {
+		min-height: 500px;
+	}
+
+	.corporate {
+		flex-direction: column;
+	}
+
+	.corporate img {
+		margin: 0 0 20px 0;
+	}
+
+	.companyInfo {
+		align-items: center;
+	}
+
+	.subscribe, 
+	.copyright.wrapperA {
+		margin-left: 0;
+		align-items: center;
+	}
+
+	.copyright p {
+		text-align: center;
+	}
+
+	.tellUs.wrapperB {
+		padding-top: 50px;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.wrapperB {
+		width: 70%;
+	}
+
+	.tellUs .quarter:nth-of-type(1),
+	.tellUs .quarter:nth-of-type(2),
+	.tellUs .quarter:nth-of-type(3) {
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.tellUs.wrapperB {
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	.tellUs.wrapperB {
+		padding-top: 80px;
+	}
+}

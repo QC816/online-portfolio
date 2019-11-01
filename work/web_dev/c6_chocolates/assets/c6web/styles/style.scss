@@ -1,0 +1,847 @@
+@import "partials/setup";
+@import "partials/visuallyHidden.scss";
+@import "partials/skipLink.scss";
+$gold: rgb(240, 180, 64);
+$brown: rgb(175, 126, 32);
+$lightGrey: rgb(200, 200, 200);
+$mediumGrey: rgb(150, 150, 150);
+$darkGrey: rgb(80, 80, 80);
+$charcoal: rgb(26, 26, 26);
+
+
+// --------- GENERAL STYLE --------- //
+
+@import "partials/generalStyle.scss";
+
+// ---------- HEADER STYLE ---------//
+
+header {
+  	height: 100vh;
+  	position: relative;
+}
+
+.vegas-timer-progress {
+	opacity: 0;
+}
+
+.hamburger {
+	display: none;
+	padding-top: 17px;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav ul {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+ul a {
+	margin: 20px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	transition: all 0.5s;
+}
+
+ul a:hover {
+	border-bottom: 2px solid $gold;
+}
+
+ul a:active {
+	color: $gold;
+}
+
+.c6logo img{
+	width: 150px;
+	margin-top: 30px;
+}
+
+header h1 {
+	margin-top: 20px;
+}
+
+.shoppingBag svg {
+	height: 20px;
+	margin-top: 18px;
+	margin-right: 10px;
+}
+
+.searchInput {
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	margin-top: 25px;
+	padding: 0;
+	text-align: right;
+	width: 0;
+	height: 20px;
+	color: white;
+	transition: 0.3s;
+}
+
+.searchInputSpace{
+	width: 160px;
+}
+
+form input[type=image] {
+	height: 22px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+header p {
+	width: 40%;
+	margin-top: 12px;
+	color: white;
+}
+
+header button {
+	margin-top: 35px;
+	transition: all 0.3s;
+}
+
+header button:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	font-weight: 800;
+}
+
+header .signup {
+	display: flex;
+	flex-direction: row;
+}
+
+.signUp a {
+	padding-top: 5px;
+	font-size: 1.1rem;
+	letter-spacing: 0.4rem;
+	color: white;
+	text-align: left;
+	margin-left: 33px;
+	transition: 0.3s;
+}
+
+.signUp a:hover {
+	color: $gold;
+	border-bottom: none;
+}
+
+.signUp span {
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.signUpInfo {
+	position: relative;
+}
+
+.signUpForm {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 290px;
+	height: 125px;
+	border: 1px solid white;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+
+.fill {
+	position: relative;
+}
+
+.whiteLine {
+	width: 100%;
+	border-bottom: 1px solid white;
+	position: absolute;
+}
+
+.whiteLine1 {
+	top: 45px;
+}
+
+.whiteLine2 {
+	top: 90px;
+}
+
+.signUpForm input {
+	width: 100%;
+	height: 45px;
+	background: none;
+	border: none;
+	font-weight: 400;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+	padding-left: 15px;
+	color: white;
+}
+
+.signUpForm input::placeholder {
+	color: white;
+}
+
+.signUpForm button {
+	margin: 0 0 0 150px;
+	width: 50%;
+	text-align: center;
+	border: none;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.signUpForm button:hover {
+	background: rgba(255, 255, 255, 0.8);
+	color: black;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.twoButtons {
+	display: flex;
+	position: relative;
+}
+
+.closeButton {
+	width: 45px;
+	height: 45px;
+	border-left: 1px solid white;
+	transform: rotate(45deg);
+	position: absolute;
+	bottom: -20px;
+	left: 8px;
+	z-index: 40;
+}
+
+.closeButton::before {
+	content:"";
+	width: 45px;
+	height: 45px;
+	border-right: 1px solid white;
+	transform: rotate(90deg);
+	position: absolute;
+	bottom: 22px;
+	left: -22px;
+	z-index: 40;
+}
+
+.box {
+	width: 43px;
+	height: 34px;
+	border-right: 1px solid white;
+}
+
+.arrow {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+}
+
+.arrow svg {
+	stroke: rgba(255, 255, 255, 0.6);
+	margin: 0 auto;
+}
+
+// ---------- MAIN STYLE ---------- //
+
+
+main {
+	height: auto;
+}
+
+main .feature {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 75px;
+}
+
+main h4{
+	margin-top: 100px;
+	margin-bottom: 4px;
+}
+
+.quarter {
+	width: calc(25% - 23px);
+	margin: 0;
+}
+
+.quarter:nth-of-type(1) {
+	margin-left: 0;
+}
+
+.quarter:nth-of-type(3) {
+	margin-right: 0;
+}
+
+.textQuarter {
+	padding-right: 1%;
+}
+
+.feature figure {
+	position: relative;
+}
+
+.addToCart {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: rgba(243, 18, 18, 0.7);
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0 20px 95px 0;
+	box-shadow: 0 0 10px $gold;
+	opacity: 0;
+	transition: 0.3s
+}
+
+.feature figure:hover .addToCart {
+	opacity: 1;
+}
+
+.feature figcaption {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.productName, 
+.price, 
+.productDescription {
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	line-height: 1.8rem;
+}
+
+.productName {
+	font-weight: 600;
+	color: $gold;
+}
+
+.price {
+	font-weight: 600;
+}
+
+.productDescription {
+	font-weight: 300;
+}
+
+.divider {
+	width: 100%;
+	border-top: 1px solid $mediumGrey;
+	margin-top: 60px;
+}
+
+.shop {
+	display: flex;
+	height: auto;
+	margin: 80px 0;
+}
+
+.half1 {
+	width: calc(50% - 16px);
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: 16px;
+}
+
+.half2 {
+	width: calc(50% - 16px);
+	height: 100%;
+	margin-left: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.half4 {
+	display: none;
+}
+
+.half2 img {
+	width: 100%;
+}
+
+.shop .quarter {
+	width: calc(50% - 16px);
+}
+
+.shop .quarter1 {
+	margin-right: 8px;
+}
+
+.shop .quarter2 {
+	margin-left: 8px;
+}
+
+.shop figure {
+	height: 100%;
+	margin: 14px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.overlay3,
+.overlay4 {
+	height: 100%;
+	width: 100%;
+}
+
+.nutBar:hover .overlay1,
+.regBonbons:hover .overlay2, 
+.bkSesame:hover .overlay3, 
+.veganBonbons:hover .overlay4,
+.garlic:hover .overlay5 {
+	opacity: 1;
+}
+
+.shop figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	background-color: rgba(240, 240, 240, 0.8);
+	z-index: 30;
+	text-align: center;
+}
+
+.shop .productName {
+	color: $charcoal;
+	padding-top: 6px;
+}
+
+.shop .price {
+	color: $charcoal;
+	font-weight: 400;
+}
+
+
+// ----- SECTION (Our Chocolate) STYLE ----- //
+
+.ourChocolates {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../assets/custom_hand_drawn.jpg);
+	background-position: center;
+	position: relative;
+}
+
+.ourChocolates::before {
+	content: "";
+	background: rgba(0, 0, 0, 0.05);
+	height: 700px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ourChocolates .wrapperB {
+	display: flex;
+	height: 330px;
+	position: relative;
+}
+
+.ourChocolates .half {
+	width: 50%;
+	margin-top: 135px;
+}
+
+.quality, .source {
+	position: absolute;
+	z-index: 10;
+	width: 25%;
+	height: 350px;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	display: none;
+}
+
+.quality {
+	top: 0;
+    left: 50%;
+    padding: 75px 70px;
+}
+
+.source {
+	top: 350px;
+    left: 75%;
+    padding: 70px;
+}
+
+.ourChocolates h3 {
+	color: $brown;
+}
+
+.ourChocolates p {
+	font-weight: 400;
+}
+
+.quality p, 
+.source p {
+	font-size: 1.6rem;
+}
+
+.ourChocolates a,
+.customOrders a,
+.about a {
+	border: 2px solid $mediumGrey;
+	height: 35px;
+	width: 135px;
+	padding-top: 10px;
+	margin-top: 30px;
+	font-weight: 800;
+	letter-spacing: 0.4rem;
+	color: $mediumGrey;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.ourChocolates a:hover,
+.about a:hover {
+	background-color: $brown;
+	color: white;
+	border: 2px solid $brown;
+}
+
+.ourChocolates .line,
+.qulity .line,
+.source .line  {
+	border-top: 2px solid $brown;
+}
+
+// ----- (Custom orders) STYLE ----- //
+
+.customOrders {
+	margin-top: 490px;
+	text-align: right;
+	flex-direction: column;
+	padding-left: 40%;
+	align-items: flex-end;
+}
+
+.customOrders .line {
+	border-top: 2px solid $gold;
+	margin-top: 15px;
+}
+
+.tellUs {
+	margin-top: 280px;
+}
+
+.tellUs .quarter {
+	width: calc(25% - 15px);
+	margin: 0 15px;
+	height: 260px;
+}
+
+.tellUs .quarter:first-of-type {
+	margin-left: 0;
+}
+
+.tellUs .quarter:last-of-type {
+	margin-right: 0;
+}
+
+.tellUs h3 {
+	color: $gold;
+}
+
+.customOrders a:hover {
+	background-color: $gold;
+	border: 2px solid $gold;
+}
+
+.tellUs .email {
+	margin-right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.tellUs figure {
+	position: relative;
+}
+
+.tellUs figcaption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 1%;
+	opacity: 0;
+	padding: 15px 20px;
+	background-color: transparent;
+	transition: all 0.5s;
+}
+
+.tellUs figure:hover figcaption {
+	height: 50%;
+	background-color: rgba(255, 255, 255, 0.7);
+	opacity: 1;
+}
+
+.tellUs p {
+	font-size: 1.5rem;
+	line-height: 1.9rem;
+	color: rgba(255, 255, 255, 0.1);
+}
+
+.tellUs figure:hover p {
+	color: $charcoal;
+}
+
+.tellUs p:nth-of-type(1) {
+	font-weight: 600;
+}
+
+.email a {
+	border: 2px solid $gold;
+	padding: 7px 5px;
+	font-size: 1.3rem;
+	line-height: 1.7rem;
+	color: $lightGrey;
+	width: 100px;
+	margin-top: 20px;
+}
+
+// ----- SECTION (About) STYLE----- //
+
+.about {
+	background-color: $lightGrey;
+	height: 620px;
+	margin-top: 20px;
+}
+
+.about .wrapperB {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about .half {
+	width: 50%;
+	margin: 80px 0;
+}
+
+.about img {
+	height: 100%;
+}
+
+.about .half2 {
+	padding-left: 120px;
+}
+
+.about .line {
+	border-top: 2px solid $brown;
+}
+
+.about h6 {
+	margin-bottom: 2.5%;
+}
+
+.about h5 {
+	color: $darkGrey;
+}
+
+.about p {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 400;
+}
+
+.about p:first-of-type {
+	margin-bottom: 10%;
+}
+
+.about a {
+	width: 160px;
+}
+
+// ----- FOOTER STYLE ----- //
+
+footer {
+	background-color: $charcoal;
+	height: 250px;
+}
+
+footer .wrapperA {
+	padding-top: 45px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.corporate,
+.subscribe {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.subscribe {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.subscribe button {
+	width: 230px;
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: $mediumGrey;
+	text-transform: none;
+	letter-spacing: 0.1rem;
+	padding-bottom: 3px;
+	border: 1px solid $mediumGrey;
+}
+
+footer img {
+	width: 110px;
+	margin-right: 25px;
+}
+
+footer p {
+	font-size: 2rem;
+	font-weight: 400;
+	color: white;
+	letter-spacing: 0.25rem;
+}
+
+footer a {
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: $mediumGrey;
+	text-transform: none;
+}
+
+footer .line {
+	margin: 10px 0;
+	width: 30px;
+}
+
+.companyInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.companyInfo a:last-of-type {
+	padding-top: 3px;
+}
+
+.social {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social button {
+	width: 100%;
+	font-size: 1.2rem;
+	font-weight: 400;
+	color: $mediumGrey;
+	letter-spacing: 0.1rem;
+	text-transform: none;
+	padding: 0 25px;
+	border: 1px solid $mediumGrey;
+	margin-right: 15px;
+	transition: all 0.3s;
+}
+
+.social button:hover {
+	background-color: $mediumGrey;
+	color: black;
+}
+
+.social a {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: $mediumGrey;
+	color: $charcoal;
+	margin-left: 15px;
+	text-align: center;
+	padding: 7px 7px 7px 9px;
+	transition: all 0.3s;
+}
+
+.social a:hover {
+	background-color: $charcoal;
+	box-shadow: 1px 1px 4px $lightGrey;
+	color: $gold;
+}
+
+.social a:first-of-type {
+	margin-left: 30px;
+}
+
+.copyright.wrapperA{
+	flex-direction: column;
+	align-items: flex-end;
+	width: 90%;
+	padding-top: 0;
+	position: relative;
+	top: -10px;
+}
+
+.copyright p {
+	width: 170px;
+	text-align: right;
+	color:  $mediumGrey;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+	line-height: 1.2rem;
+}
+
+.bottomNav.wrapperA {
+	padding-top: 0;
+}
+
+.bottomNav {
+	border-top: 1px solid $darkGrey;
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bottomNav ul {
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+.bottomNav a {
+	color: $mediumGrey;
+	display: inline-block;
+	font-size: 1.2rem;
+	letter-spacing: 0.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+// ----- MEDIA QUREY STARTS HRERE ------ //
+
+@import "partials/mediaQuery.scss";
