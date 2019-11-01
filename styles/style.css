@@ -1,0 +1,2696 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+img{
+	max-width: 100%;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ------ GENERAL STYLES ------ */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+	margin: 0;
+}
+
+h1,
+h2,
+h5,
+h6,
+p {
+	color: rgb(35, 35, 35);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 2.7rem;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: 3.4rem;
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: center;
+	color: rgb(180, 180, 180);
+	border-top: 3px solid rgb(210, 210, 210);
+	border-bottom:  3px solid rgb(210, 210, 210);
+	padding: 14px 0 16px 0;
+	margin: 180px auto;
+}
+
+h4 {
+	color: rgb(130, 130, 130);
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 1.8rem;
+	letter-spacing: 0.5rem;
+	line-height: 2.6rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+/* ------ HEADER STYLES ------ */
+
+header {
+	background-color: rgb(255, 255, 255);
+	position: fixed;
+	top: 0;
+	height: 80px;
+	width: 100vw;
+	z-index: 100;
+}
+
+header img {
+	height: 48px;
+	margin-top: 18px;
+	/*flex-shrink: 0;*/
+}
+
+nav {
+	margin: 0px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.main_menu {
+	display: flex;
+	padding: 0;
+}
+
+.main_menu li {
+	list-style: none;
+}
+
+.main_menu a {
+	font-size: 2.3rem;
+	color: rgb(130, 130, 130);
+	font-weight: 400;
+	padding: 25px 30px;
+}
+
+.main_menu .contactButton {
+	padding-right: 0;
+}
+
+.quinnyLogo {
+	display: block;
+	padding: 0;
+}
+
+.quinnyLogoStatic {
+	display: none;
+}
+
+/* -------- QUINNY LOGO ANIMATION STYLES START HERE ------ */
+.quinnyLogo {
+	height: 46px;
+	width: 190px;
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+}
+
+.quinnyLogo svg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+	fill: rgba(130, 130, 130, 1);
+	z-index: 300;
+	flex-shrink: 1;
+}
+
+.quinnyLogo .Q {
+	top: 7px;
+	left: -65px;
+}
+
+.quinnyLogo .U {
+	height: 66%;
+	top: 13px;
+	left: -43px;
+}
+
+.quinnyLogo .I {
+	top: 7px;
+	left: -21px;
+}
+
+.quinnyLogo .N1 {
+	top: 7px;
+	left: 1px;
+}
+
+.quinnyLogo .N2 {
+	top: 7px;
+	left: 34px;
+}
+
+.quinnyLogo .Y {
+	top: 7px;
+	left: 65px;
+}
+
+.quinnyLogo .C {
+	top: 7px;
+	left: 106px;
+}
+
+.animation {
+	animation-duration: 0.5s;
+	animation-delay: 0;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: both;
+}
+
+/* -------- */
+
+@keyframes upnear {
+	0% {
+		top: 7px;
+	}
+
+	90% {
+		top: -150px;
+		fill: rgba(130, 130, 130, 0);
+	}
+
+	100% {
+		top: 7px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .moveup1{
+	animation-name: upnear;
+	animation-delay: 0.2s;
+}
+
+/* -------- */
+
+@keyframes upmedium {
+	0% {
+		top: 7px;
+	}
+	90% {
+		top: -150px;
+		fill: rgba(130, 130, 130, 0);
+	}
+	100% {
+		top: 7px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .moveup2{
+	animation-name: upmedium;
+	animation-delay: 0.1s;
+}
+
+/* --------- */
+
+@keyframes upfar{
+	0% {
+		top: 7px;
+	}
+	90% {
+		top: -150px;
+		fill: rgba(130, 130, 130, 0);
+		
+	}
+	100% {
+		top: 7px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .moveup3{
+	animation-name: upfar;
+}
+
+/* ---------- */
+
+@keyframes upfarest{
+	0% {
+		top: 13px;
+	}
+	90% {
+		top: -150px;
+		fill: rgba(130, 130, 130, 0);
+		
+	}
+	100% {
+		top: 13px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .moveup4{
+	animation-name: upfarest;
+}
+
+/* ---------- */
+
+@keyframes downfar{
+	0% {
+		top: 7px;
+	}
+	90% {
+		top: 150px;
+		fill: rgba(130, 130, 130, 0);
+	}
+	100% {
+		top: 7px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .movedown3{
+	animation-name: downfar;
+	animation-delay: 0.2s;
+}
+
+/* ---------- */
+
+@keyframes downmedium{
+	0% {
+		top: 7px;
+	}
+	90% {
+		top: 150px;
+		fill: rgba(130, 130, 130, 0);
+	}
+	100% {
+		top: 7px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .movedown2{
+	animation-name: downmedium;
+}
+
+
+/* ---------- */
+
+@keyframes downnear{
+	0% {
+		top: 7px;
+	}
+	90% {
+		top: 150px;
+		fill: rgba(130, 130, 130, 0);
+	}
+	100% {
+		top: 7px;
+		fill: rgba(130, 130, 130, 1);
+	}
+}
+
+.quinnyLogo:hover .movedown1{
+	animation-name: downnear;
+	animation-delay: 0.1s;
+}
+/* -------- QUINNY LOGO ANIMATION STYLES END  HERE ------ */
+
+.main_menu a:hover {
+	color: rgb(20, 20, 20);
+}
+
+.main_menu .active {
+	color: rgb(20, 20, 20);
+}
+
+.sub_menu {
+	display: none;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.work:hover .sub_menu {
+	opacity: 1;
+	background-color: rgb(20, 20, 20);
+	height: 26px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	top: 80px;
+	right: 0;
+	min-width: 100%;
+}
+
+.sub_menu li:last-child {
+	padding-right: 14px;
+}
+
+.sub_menu a {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 600;
+	letter-spacing: 0.6rem;
+	padding: 6px 20px;
+	display: block;
+	transition: all 0.3s;
+}
+
+.sub_menu .current,
+.sub_menu a:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgb(130, 130, 130);
+}
+
+/* ------ HAMBURGER MENU STYLES ------ */
+
+button:focus {
+    outline: none;
+}
+
+.hamburger {
+	margin-top: 10px;
+	display: none;
+}
+
+.hamburger:hover,
+.hamburger.is-active:hover {
+	opacity: 1;
+}
+
+.hamburger-box {
+	width: 20px;
+	height: 20px;
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+	width: 20px;
+	height: 2px;
+	border-radius: 0;
+	background-color: rgb(130, 130, 130);
+}
+
+.hamburger-inner::after {
+	bottom: -7px;
+}
+
+.hamburger-inner::before {
+	top: -7px;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+    background-color: rgb(255, 255, 255);
+}
+
+#navigation {
+	height: 80vh;
+	position: absolute;
+	z-index: 200;
+	top: 80px;
+	right: 0;
+	display: none;
+}
+
+#navigation ul {
+	padding-left: 0;
+}
+
+#navigation li {
+	list-style: none;
+	text-align: right;
+}
+
+#navigation a {
+	font-size: 2.6rem;
+	color: rgb(255, 255, 255);
+	line-height: 1.5;
+}
+
+#navigation li:nth-of-type(2) {
+	padding-bottom: 30px;
+}
+
+#subnavigation ul {
+	width: 100%;
+	padding-left: 0;
+}
+
+#subnavigation a {
+	position: relative;
+	right: -40px;
+	font-size: 1.8rem;
+}
+
+.black_background {
+	background-color: rgb(20, 20, 20);
+}
+
+.disappear {
+	display: none;
+}
+
+/* ------ SECTION (about) STYLES ------ */
+
+.about,
+.contact {
+	margin: 0 40px;
+	background: rgb(255, 255, 255);
+}
+
+.about {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about p,
+.contact p {
+	font-size: 2.2rem;
+	line-height: 4.3rem;
+	padding-bottom: 30px;
+	width: 75%;
+}
+
+.about p:first-child,
+.contact p:first-child {
+	padding-top: 80px;
+}
+
+.about a,
+.contact a {
+	color: rgb(130, 130, 130);
+	font-weight: 600;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15%;
+}
+aside div:nth-child(1) {
+	height: 10%;
+}
+
+aside div:nth-child(3) {
+	height: 50%;
+}
+
+aside div:nth-child(2) {
+	padding-left: 10px;
+	border-left: 1px solid rgb(20, 20, 20);
+}
+
+.about aside p {
+	font-size: 1.6rem;
+	line-height: 2.6rem;
+	padding: 0;	
+}
+
+h6 {
+	font-weight: 600;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	padding-bottom: 13px;
+}
+
+.aside2 {
+	display: none;
+}
+
+.close {
+	display: block;
+	text-align: right;
+	color: rgb(130, 130, 130);
+	font-size: 2.3rem;
+	font-weight: 400;
+	margin: 50px 40px 40px;
+}
+
+.close:hover {
+	color: rgb(20, 20, 20);
+}
+
+/* –––––– SECTION (project) STYLES –––––– */
+
+.wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 260px;
+}
+
+.titles {
+	width: 50%;
+}
+
+.info h4 {
+	margin-bottom: 94px;
+	line-height: 1.5;
+}
+
+.description {
+	width: 33.33%;
+}
+
+.description p {
+	font-size: 2.2rem;
+	line-height: 1.73;
+	color: rgb(20, 20, 20);
+	padding-bottom: 40px;
+}
+
+.description p:last-child {
+	padding-bottom: 100px;
+}
+
+p.credit {
+	font-size: 1.4rem;
+}
+
+.divider {
+	width: 100%;
+	border-top: 1px solid rgb(20, 20, 20);
+}
+
+.rows {
+	margin-top: 120px;
+}
+
+.left,
+.right,
+.center {
+	color: rgb(20, 20, 20);
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.logo {
+	padding-bottom: 80px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.half {
+	width: 50%;
+}
+
+.bm_stationery1 {
+	width: 41.66%;
+}
+
+.bm_stationery2 {
+	width: 58.33%;
+}
+
+.one_third {
+	width: 33.33%;
+}
+
+.image_border {
+	border: 1px solid rgb(130, 130, 130);
+}
+
+.image_shadow {
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ------ IMAGE SIZE & CENTER STYLES ------ */
+
+.shore_logo,
+.cti_logo {
+	width:45%;
+}
+
+.qc_logo,
+.thinkthin_logo,
+.cti_report1,
+.hrpao_ad {
+	width: 55%;
+}
+
+.qc_home,
+.qc_library,
+.qc_sketches,
+.qc_wireframes img,
+.cronus_effects div,
+.thomson_spreads img,
+.snowbat_logo,
+.ond_logo,
+.habco_inside img {
+	width: 66.66%;
+}
+
+.cane,
+.cane_concept2,
+.c6_web,
+.c6_jquery,
+.thomson_covers,
+.thomson_icon,
+.thomson_chart,
+.zeifman_spread1,
+.zeifman_spread2,
+.ond_bzcard,
+.hrpao_photo,
+.taniF {
+	width: 80%;
+}
+
+.cronus_home,
+.c6_mobile,
+.cti_formation,
+.summer_sun,
+.blue_mountain {
+	width: 90%;
+}
+
+.qc_logo,
+.qc_library,
+.qc_home,
+.cronus_home,
+.cane,
+.cane_concept2,
+.c6_mobile,
+.c6_web,
+.c6_jquery,
+.thomson_covers,
+.thomson_icon,
+.thomson_chart,
+.thinkthin_logo,
+.snowbat_logo,
+.shore_logo,
+.cti_report1,
+.cti_formation,
+.cti_logo,
+.ond_bzcard,
+.ond_logo,
+.summer_sun,
+.hrpao_photo,
+.taniF,
+.blue_mountain {
+	margin: 120px auto;
+}
+
+.summer_sun img,
+.c6_mobile .one_third {
+	width: calc(33.33% - 27px);
+}
+
+.bm_logo .half,
+.hrpao_bro1 img,
+.hrpao_bro2 img,
+.ond_bzcard img,
+.cti_report2 .half,
+.c6_jquery .half,
+.qc_sketches img,
+.cane_concept1 img {
+	width: calc(50% - 20px);
+}
+
+/* ------ BLUE MOUNTAIN STYLES ------ */
+
+
+.bm_gold_logo img {
+	margin: auto;
+	width: 100%;
+}
+
+.bm_small_logo {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.bm_small_logo .top {
+	align-self: flex-start;
+	padding-bottom: 40px;
+}
+
+.bm_small_logo .bottom {
+	align-self: flex-end;
+}
+
+.bm_bzcard {
+	width: 70%;
+}
+
+.bm_bzcard img:last-child,
+.bm_coffee_label img:last-child {
+	margin-top: 40px;
+}
+
+.bm_envelope,
+.bm_letterhead {
+	position: relative;
+}
+
+.bm_envelope img {
+	width: 95%;
+}
+
+.bm_envelope img:nth-of-type(1) {
+	margin-left: 5%;
+}
+
+.bm_envelope img:nth-of-type(2) {
+	position: absolute;
+	top: 50%;
+	left: -5%;
+	z-index: 10;
+}
+
+.bm_coffee_label img {
+	width: 85%;
+	display: block;
+}
+
+.bm_letterhead {
+	margin-top: 220px;
+}
+
+.bm_letterhead img {
+	width: 90%;
+}
+
+.bm_letterhead img:nth-of-type(1) {
+	margin-left: 10%;
+	margin-bottom: 40px;
+}
+
+.bm_letterhead img:nth-of-type(2) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.bm_collateral {
+	align-items: flex-end;
+}
+
+.bm_sticker {
+	width: 35%;
+	margin: 0 80px 0 55px;
+}
+
+/* ----- HABCO STYLES ----- */
+
+.habco_cover img {
+	width: calc((100% - 40px) / 3);
+	display: block;
+}
+
+.habco_cover img:last-child{
+	margin-left: 40px;
+}
+
+.habco_inside {
+	position: relative;
+	margin-bottom: 44%;
+}
+
+.habco_inside img:last-child {
+	position: absolute;
+	top: 80%;
+	right: 0;
+	z-index: 10;
+}
+
+/* ------ TANI STYLES ------ */
+
+.taniF img:last-child {
+	margin-top: 40px;
+}
+
+.taniM {
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+}
+
+.taniM img {
+	width: 50%;
+}
+
+.taniM img:nth-of-type(2) {
+	margin-top: 40px;
+	margin-bottom: 450px;
+}
+
+.tani_box {
+	position: absolute;
+	bottom: 0;
+	z-index: -10;
+}
+
+.tani_box h4 {
+ 	width: 30%;
+}
+
+.tani_box img {
+	width: 66.66%;
+}
+
+/* ------ HRPAO STYLES ------ */
+
+
+.hrpao_ad {
+	margin: 0 auto;
+}
+
+/* ------ OND STYLES ------ */
+
+.ond_logo img:last-child {
+	display: none;
+}
+
+/* ------ CTI STYLES ------ */
+
+.cti_report2 .half:first-child {
+	margin-top: 40%;
+}
+
+/* ------ SHORE CREATIVE STYLES ------ */
+
+.shore_concept2 {
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+}
+
+.shore_letterhead1,
+.shore_letterhead2 {
+	width: calc(70% - 20px);
+}
+
+.shore_bzcard1 {
+	width: calc(30% - 20px);
+	margin-top: 20%;
+}
+
+.shore_bzcard1 img {
+	margin: 40px 0;
+	display: block;
+}
+
+.shore_bzcard2 {
+	width: 36%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 10;
+}
+
+/* ------ SNOWBAT STYLES ------ */
+
+.snowbat_xslogos img {
+	width: calc(16.66% - 20px);
+}
+
+.snowbat_xslogos img:last-child {
+	margin-right: 0;
+}
+
+.snowbat_stationery {
+	position: relative;
+}
+
+.snowbat_bzcards {
+	position: absolute;
+	width: 35%;
+	right: 0;
+	top: 30%;
+}
+
+.snowbat_bzcards img {
+	margin-top: 40px;
+}
+
+.snowbat_letterhead {
+	width: 80%;
+}
+
+/* ------ THINKTHIN STYLES ------ */
+
+.thinkthin_web {
+	flex-direction: column;
+}
+
+
+.thinkthin_web div:first-child {
+	width: 90%;
+}
+
+.thinkthin_web div:last-child {
+	width: 70%;
+	margin-top: 80px;
+	align-self: flex-end;
+}
+
+/* ------ ZEIFMAN STYLES ------ */
+
+.zeifman_bro img:first-child,
+.zeifman_spread1 img:first-child,
+.zeifman_spread2 img:first-child,
+.zeifman_folder img:first-child {
+	border-right: 1px dotted rgb(130, 130, 130);
+}
+
+.zeifman_spreads {
+	display: flex;
+	flex-direction: column;
+}
+
+.zeifman_spread2 {
+	margin-top: 80px;
+	align-self: flex-end;
+}
+
+.zeifman_folder {
+	width: calc(60% - 20px);
+	margin-bottom: 100px;
+}
+
+.zeifman_package {
+	width: calc(40% - 20px);
+	position: relative;
+}
+
+.zeifman_package img {
+	width: 70%;
+	position: absolute;
+}
+
+.zeifman_package img:first-of-type {
+	right: 0;
+}
+
+.zeifman_package img:last-of-type {
+	left: 0;
+	top: 180px;
+}
+
+/* ------ THOMSON STYLES ------ */
+
+.thomson_cover {
+	justify-content: center;
+}
+
+.thomson_covers .right {
+	margin-right: 24.5%;
+}
+
+.thomson_incover,
+.thomson_spreads img:last-child {
+	margin-top: 80px;
+}
+
+.thomson_incover img:last-child {
+	border-left: 1px dashed rgb(0, 100, 160);
+}
+
+.thomson_spreads {
+	flex-direction: column;
+}
+
+.thomson_spreads img:last-child {
+	align-self: flex-end;
+}
+
+.thomson_icon img {
+	margin: 60px 0;
+}
+
+/* ------ C6 CHOCOLATES STYLES ------ */
+
+.c6_web img {
+	display: block;
+}
+
+.c6_web img:nth-of-type(2),
+.c6_web img:nth-of-type(3) {
+	border-left: 1px solid rgb(200, 200, 200);
+}
+
+.download {
+	justify-content: center;
+}
+
+.download p {
+	font-size: 1.8rem;
+	color: rgb(130, 130, 130);
+	font-weight: 300;
+}
+
+.download p:last-child {
+	margin-left: 10px;
+}
+
+.download a {
+	font-weight: 600;
+	color: rgb(130, 130, 130);
+}
+
+/* ------ QC PORTFOLIO STYLES ------ */
+
+.qc_wireframes {
+	align-items: flex-end;
+}
+
+.qc_library img:nth-of-type(3),
+.qc_library img:nth-of-type(4),
+.qc_library img:nth-of-type(5) {
+	width: 100%;
+	margin-top: 60px;
+}
+
+/* ------ CRONUS STYLES ------ */
+
+.cronus_effects div:nth-child(odd) {
+	align-self: flex-end;
+}
+
+.cronus_effects div:first-child {
+	margin-right: 10%;
+}
+
+.cronus_effects .extra_padding {
+	padding: 10px;
+}
+
+.last_div {
+	margin-left: 10%;
+}
+
+/* ------ CANE STYLES ------ */
+
+.cane_concept1 {
+	flex-wrap: wrap;
+}
+
+.cane_concept1 img:nth-of-type(1),
+.cane_concept1 img:nth-of-type(2),
+.cane_concept2 img {
+	margin-bottom: 40px;
+}
+
+.cane_concept2 img:last-child {
+	margin-bottom: 0;
+}
+
+
+/* –––––– LOAD MORE BUTTON STYLES –––––– */
+
+.load_project {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 125px 0 100px 0;
+}
+
+.load_project svg {
+	padding-top: 4px;
+}
+
+.load_project p {
+	font-weight: 700;
+	font-size: 1.6rem;
+	letter-spacing: 0.3rem;
+	padding: 2px;
+	color: rgb(130, 130, 130);
+}
+
+.load_project p:first-child {
+	padding-right: 15px;
+}
+
+.load_project p:last-child {
+	padding-left: 15px;
+}
+
+.load_project a {
+	color: rgb(130, 130, 130);
+	display: flex;
+}
+
+.load_project a:hover p {
+	color: rgb(20, 20, 20);
+}
+
+.load_project a:hover polygon{
+	fill: rgb(20, 20, 20);
+}
+
+
+/* ------ MAIN (GALLERY SECTION) STYLES ------ */
+
+.margin_box {
+	height: 80px;
+	background: rgb(255, 255, 255);
+}
+
+.extra_margin {
+	height: 108px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+figure {
+	margin: 0;
+	width: 25%;
+	position: relative;
+}
+
+figure img {
+	display: block;
+}
+
+figcaption {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+figure:hover figcaption {
+	opacity: 1;
+}
+
+figcaption h2 {
+	position: absolute;
+	bottom: 60px;
+	left: 40px;
+}
+
+.habco h2,
+.c6Chocolates h2,
+.hrpao h2,
+.qcPortfolio h2,
+.thinkThin h2,
+.cti h2,
+.zeifman h2 {
+	bottom: 88px;
+}
+
+figcaption h5 {
+	position: absolute;
+	bottom: 32px;
+	left: 40px;
+}
+
+/* –––––– FOOTER STYLES ––––– */
+
+footer {
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer div {
+	width: 10%;
+	border-bottom: 1px solid rgb(130, 130, 130);
+	flex-grow: 2;
+}
+
+footer p {
+	font-size: 1rem;
+	text-align: center;
+	padding: 20px 0 20px 40px;
+	color:  rgb(130, 130, 130);
+}
+
+/* ------ MEDIA QUERY ------ */
+
+@media (max-width: 1125px) {
+	figure {
+		width: 33.33%;
+	}
+
+	.description {
+		width: 38%;
+	}
+
+	.description p {
+		font-size: 2rem;
+	}
+
+	p.credit {
+		font-size: 1.4rem;
+	}
+
+	h1 {
+		font-size: 5.6rem;
+	}
+
+	h3 {
+		font-size: 3rem;
+	}
+
+	h4 {
+		font-size: 1.8rem;
+	}
+
+	.bm_logo .half,
+	.hrpao_bro1 img,
+	.hrpao_bro2 img,
+	.ond_bzcard img,
+	.cti_report2 .half,
+	.c6_jquery .half,
+	.qc_sketches img,
+	.cane_concept1 img {
+		width: calc(50% - 18px);
+	}
+
+	.bm_small_logo .top {
+		align-self: flex-start;
+		padding-bottom: 36px;
+	}
+
+	.bm_bzcard img:last-child,
+	.bm_coffee_label img:last-child {
+		margin-top: 36px;
+	}
+
+	.habco_cover img {
+		width: calc((100% - 36px) / 3);
+	}
+
+	.habco_cover img:last-child{
+		margin-left: 36px;
+	}
+
+	.summer_sun img,
+	.c6_mobile .one_third {
+		width: calc(33.33% - 24px);
+	}
+
+	.shore_bzcard1 {
+		width: calc(30% - 18px);
+	}
+
+	.shore_bzcard1 img {
+		margin: 36px 0;
+	}
+
+	.snowbat_xslogos img {
+		width: calc(16.66% - 18px);
+	}
+
+	.zeifman_package {
+		width: calc(40% - 18px);
+	}
+
+	.cane_concept1 img:nth-of-type(1),
+	.cane_concept1 img:nth-of-type(2),
+	.cane_concept2 img {
+		margin-bottom: 36px;
+	}
+
+}
+
+@media (max-width: 1024px) {
+	.about p,
+	.contact p {
+		font-size: 2.1rem;
+		line-height: 4rem;
+	}
+
+	.description p {
+		font-size: 1.9rem;
+	}
+
+	p.credit {
+		font-size: 1.35rem;
+	}
+
+	h1 {
+		font-size: 5.2rem;
+	}
+
+	h4 {
+		font-size: 1.65rem;
+	}
+
+	.bm_logo .half,
+	.hrpao_bro1 img,
+	.hrpao_bro2 img,
+	.ond_bzcard img,
+	.cti_report2 .half,
+	.c6_jquery .half,
+	.qc_sketches img,
+	.cane_concept1 img {
+		width: calc(50% - 16px);
+	}
+
+	.bm_small_logo .top {
+		align-self: flex-start;
+		padding-bottom: 32px;
+	}
+
+	.bm_bzcard img:last-child,
+	.bm_coffee_label img:last-child {
+		margin-top: 32px;
+	}
+
+	.habco_cover img {
+		width: calc((100% - 33px) / 3);
+	}
+
+	.habco_cover img:last-child{
+		margin-left: 32px;
+	}
+
+	.summer_sun img,
+	.c6_mobile .one_third {
+		width: calc(33.33% - 22px);
+	}
+
+	.shore_bzcard1 {
+		width: calc(30% - 16px);
+	}
+
+	.shore_bzcard1 img {
+		margin: 32px 0;
+	}
+	
+	.snowbat_xslogos img {
+		width: calc(16.66% - 16px);
+	}
+
+	.zeifman_package {
+		width: calc(40% - 16px);
+	}
+
+	.zeifman_package img:last-of-type {
+		top: 160px;
+	}
+
+	.cane_concept1 img:nth-of-type(1),
+	.cane_concept1 img:nth-of-type(2),
+	.cane_concept2 img {
+		margin-bottom: 32px;
+	}
+}
+
+@media (max-width: 960px) {
+	.about p,
+	.contact p {
+		font-size: 2rem;
+	}
+
+	header img {
+		height: 42px;
+		margin-top: 16px;
+	}
+
+	.main_menu a {
+		font-size: 2.1rem;
+	}
+
+	.sub_menu a {
+		font-size: 1.3rem;
+	}
+
+	.info {
+		margin-top: 230px;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+		font-weight: 400;
+	}
+
+	figcaption h2 {
+		bottom: 55px;
+	}
+
+	.habco h2,
+	.c6Chocolates h2,
+	.hrpao h2,
+	.qcPortfolio h2,
+	.thinkThin h2,
+	.cti h2,
+	.zeifman h2 {
+		bottom: 78px;
+	}
+
+	h5 {
+		font-size: 1.6rem;
+		letter-spacing: 0.4rem;
+		line-height: 2.2rem;
+		font-weight: 400;
+	}
+
+	.bm_sticker {
+		width: 45%;
+		margin: 0 70px 0 45px;
+	}
+	
+	.habco_cover img:first-child {
+		display: none;
+	}
+
+	.habco_cover img {
+		width: calc(50% - 16px);
+	}
+
+	.habco_inside img {
+		width: 80%;
+	}
+
+	.habco_inside {
+		margin-bottom: 62%;
+	}
+
+	.habco_inside img:last-child {
+		top: 90%;
+	}
+	
+	.taniM img {
+		width: 60%;
+	}
+
+	.tani_box img {
+		width: 75%;
+	}
+
+	.description p {
+		font-size: 1.7rem;
+	}
+
+	p.credit {
+		font-size: 1.28rem;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+	}
+
+	footer p {
+		line-height: 1.3;
+	}
+
+	.thomson_spreads img,
+	.cronus_effects div {
+		width: 75%;
+	}
+
+	.cronus_effects div:first-child {
+		margin-right: 0;
+	}
+
+	.last_div {
+		margin-left: 5%;
+	}
+
+	.thomson_icon img {
+		margin: 40px 0;
+	}
+}
+
+@media (max-width: 800px) {
+
+	figure {
+		width: 50%;
+	}
+
+	.main_menu a {
+	    padding: 25px 25px;
+	}
+
+	.sub_menu a {
+		font-size: 1.3rem;
+		padding: 6px 20px;
+	}
+
+	.about p,
+	.contact p {
+		font-size: 1.8rem;
+		line-height: 3.6rem;
+		width: 85%;
+	}
+
+	h1 {
+		font-size: 4.4rem;
+	}
+
+	.description {
+		width: 41%;
+	}
+
+	.description p {
+		font-size: 1.6rem;
+	}
+
+	p.credit {
+		font-size: 1.28rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	.download p {
+	    font-size: 1.6rem;
+	}
+
+	.bm_logo .half,
+	.hrpao_bro1 img,
+	.hrpao_bro2 img,
+	.ond_bzcard img,
+	.cti_report2 .half,
+	.c6_jquery .half,
+	.qc_sketches img,
+	.cane_concept1 img {
+		width: calc(50% - 13px);
+	}
+
+	.bm_small_logo .top {
+		align-self: flex-start;
+		padding-bottom: 26px;
+	}
+
+	.bm_bzcard img:last-child,
+	.bm_coffee_label img:last-child {
+		margin-top: 26px;
+	}
+
+	.habco_cover img:last-child{
+		margin-left: 16px;
+	}
+
+	.bm_sticker {
+		width: 70%;
+		margin: 0 40px 0 25px;
+	}
+
+	.hrpao_ad,
+	.cti_report1 {
+		width: 66.66%;
+	}
+
+	.summer_sun img,
+	.c6_mobile .one_third {
+		width: calc(33.33% - 18px);
+	}
+
+	.ond_bzcard,
+	.c6_jquery,
+	.qc_wireframes img {
+		width: 100%;
+	}
+
+	.qc_library,
+	.qc_sketches,
+	.qc_home {
+		width: 75%;
+	}
+
+	.shore_logo,
+	.cti_logo {
+		width:55%;
+	}
+
+	.shore_bzcard1 {
+		width: calc(30% - 13px);
+	}
+
+	.shore_bzcard1 img {
+		margin: 26px 0;
+	}
+	
+	.snowbat_xslogos img {
+		width: calc(16.66% - 13px);
+	}
+
+	.zeifman_package {
+		width: calc(40% - 13px);
+	}
+
+	.zeifman_package img:last-of-type {
+		top: 140px;
+	}
+
+	.cane_concept1 img:nth-of-type(1),
+	.cane_concept1 img:nth-of-type(2),
+	.cane_concept2 img {
+		margin-bottom: 26px;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+		padding: 12px 0 14px 0;
+		margin: 150px auto;
+	}
+}
+
+@media (max-width: 700px) {
+	.main_menu a {
+	    font-size: 2rem;
+	    padding: 25px 20px;
+	}
+
+	.sub_menu a {
+		font-size: 1.3rem;
+		padding: 6px 20px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.quinnyLogo {
+		display: none;
+	}
+
+	.quinnyLogoStatic {
+		display: block;
+	}
+
+	.main_menu {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+		padding: 15px 0 15px 15px;
+	}
+
+	.about {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.about p, 
+	.contact p {
+	    line-height: 3.3rem;
+	}
+
+	aside {
+		display: none;
+	}
+
+	.aside2 {
+		display: block;
+		width: 80%;
+		border-top: 1px solid rgb(20, 20, 20);
+		margin-top: 30px;
+	}
+
+	.aside2 p {
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.bm_logo .half,
+	.hrpao_bro1 img,
+	.hrpao_bro2 img,
+	.ond_bzcard img,
+	.cti_report2 .half,
+	.c6_jquery .half,
+	.qc_sketches img,
+	.cane_concept1 img {
+		width: calc(50% - 10px);
+	}
+
+	.bm_small_logo .top {
+		align-self: flex-start;
+		padding-bottom: 20px;
+	}
+
+	.bm_bzcard img:last-child,
+	.bm_coffee_label img:last-child {
+		margin-top: 20px;
+	}
+
+	.habco_cover img:last-child{
+		margin-left: 13px;
+	}
+
+	.summer_sun img,
+	.c6_mobile .one_third {
+		width: calc(33.33% - 15px);
+	}
+
+	.blue_mountain {
+		width: 100%;
+	}
+
+	.rows {
+		margin-top: 100px;
+	}
+
+	.qc_logo,
+	.qc_library,
+	.qc_home,
+	.cronus_home,
+	.cane,
+	.cane_concept2,
+	.c6_mobile,
+	.c6_web,
+	.c6_jquery,
+	.thomson_covers,
+	.thomson_icon,
+	.thomson_chart,
+	.thinkthin_logo,
+	.snowbat_logo,
+	.shore_logo,
+	.cti_report1,
+	.cti_formation,
+	.cti_logo,
+	.ond_bzcard,
+	.ond_logo,
+	.summer_sun,
+	.hrpao_photo,
+	.taniF,
+	.blue_mountain {
+		margin: 100px auto;
+	}
+
+	.logo {
+		padding-bottom: 60px;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		padding: 10px 0 11px 0;
+		margin: 120px auto;
+	}
+
+	.info {
+		margin-top: 200px;
+	}
+
+	.bm_letterhead {
+		margin-top: 140px;
+	}
+
+	.left,
+	.right,
+	.center {
+		font-size: 1.4rem;
+		padding-bottom: 13px;
+	}
+
+	.logo {
+		padding-bottom: 60px;
+	}
+
+	.taniM img,
+	.cti_logo {
+		width: 70%;
+	}
+	
+	.ond_logo,
+	.hrpao_ad,
+	.cti_report1,
+	.qc_logo {
+		width: 75%;
+	}
+
+	.qc_sketches,
+	.qc_home,
+	.snowbat_logo,
+	.cronus_effects div,
+	.tani_box img {
+		width: 80%;
+	}
+
+	.snowbat_bzcards img {
+	    margin-top: 30px;
+	}
+
+	.qc_library {
+		width: 90%;
+	}
+
+	.hrpao_photo {
+		width: 100%;
+	}
+
+	.shore_logo,
+	.thinkthin_logo {
+		width: 66.66%;
+	}
+
+	.shore_bzcard1 {
+		width: 30%;
+	}
+
+	.shore_bzcard1 img {
+		margin: 20px 0;
+	}
+
+	.shore_bzcard2 {
+		width: 40%;
+	}
+
+	.thomson_icon img {
+		margin: 20px 0;
+	}
+	
+	.download {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.download p {
+		font-size: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.qc_library img:nth-of-type(3), 
+	.qc_library img:nth-of-type(4), 
+	.qc_library img:nth-of-type(5) {
+	    margin-top: 40px;
+	}
+}
+
+@media (max-width: 520px) {
+
+	.wrapper {
+		max-width: 100%;
+		margin: 0 40px;
+	}
+
+	h3 {
+	    font-size: 1.9rem;
+	}
+
+	.info,
+	.bm_logo,
+	.blue_mountain2,
+	.bm_collateral,
+	.habco_cover,
+	.summer_sun div,
+	.ond_bzcard div,
+	.cti_report2,
+	.shore_concept1,
+	.zeifman_collateral,
+	.c6_jquery {
+		flex-direction: column;
+	}
+
+	.bm_small_logo {
+		flex-direction: row;
+	}
+
+	.habco_inside,
+	.habco_inside img:last-child,
+	.taniM,
+	.tani_box,
+	.shore_concept2,
+	.shore_bzcard2,
+	.zeifman_package img {
+		position: static;
+	}
+
+	.shore_concept2 {
+		flex: none;
+	}
+
+	.description {
+		margin-top: 60px;
+	}
+
+	.bm_logo .half,
+	.bm_stationery1,
+	.bm_bag,
+	.habco_cover img,
+	.taniM img,
+	.ond_logo,
+	.ond_bzcard,
+	.cti_report2,
+	.shore_logo,
+	.shore_letterhead1,
+	.shore_letterhead2,
+	.thinkthin_logo,
+	.thomson_spreads img,
+	.cti_logo,
+	.bm_letterhead {
+		width: 80%;
+	}
+
+	.snowbat_letterhead {
+		width: 90%;
+	}
+
+	.bm_cup,
+	.summer_sun img,
+	.shore_bzcard1,
+	.shore_bzcard2,
+	.c6_jquery .half{
+		width: 60%;
+	}
+
+	.bm_sticker,
+	.zeifman_package img {
+		width: 50%;
+	}
+
+	.titles,
+	.bm_bzcard,
+	.bm_coffee_label img,
+	.description,
+	.bm_collateral,
+	.habco_inside img,
+	.taniF,
+	.tani_box h4,
+	.tani_box,
+	.tani_box img,
+	.taniM,
+	.ond_bzcard img,
+	.cti_formation,
+	.cti_report2 .half,
+	.shore_concept2,
+	.snowbat_logo,
+	.thinkthin_web div:first-child,
+	.thinkthin_web div:last-child,
+	.zeifman_collateral,
+	.zeifman_spread1,
+	.zeifman_spread2,
+	.zeifman_folder,
+	.zeifman_package,
+	.thomson_covers,
+	.c6_mobile,
+	.bm_envelope,
+	.bm_stationery2,
+	.snowbat_stationery,
+	.bm_envelope img {
+		width: 100%;
+	}
+
+	.bm_logo .half,
+	.bm_stationery1,
+	.bm_bag,
+	.habco_cover img,
+	.bm_cup,
+	.habco_cover img:last-child,
+	.taniM img,
+	.summer_sun img,
+	.ond_bzcard,
+	.cti_report2,
+	.shore_letterhead1,
+	.shore_bzcard1,
+	.shore_letterhead2,
+	.shore_bzcard2,
+	.c6_jquery .half {
+		margin: 0 auto;
+	}
+
+	.bm_sticker,
+	.habco_inside,
+	.taniM,
+	.cti_formation {
+		margin: 120px auto;
+	}
+
+	.bm_small_logo .half {
+		width: calc(50% - 10px);
+		margin: 0;
+	}
+
+	.bm_small_logo .top {
+		padding-bottom: 20px;
+	}
+
+	.bm_coffee_label .left,
+	.bm_cup .left {
+		text-align: right;
+	}
+
+	.bm_sticker .center,
+	.bm_letterhead .right,
+	.bm_envelope .right {
+		text-align: left;
+	}
+
+	.hrpao_photo .right,
+	.hrpao_ad .left,
+	.summer_sun .right,
+	.summer_sun .left,
+	.zeifman_package .right,
+	.c6_mobile .right,
+	.c6_jquery .left,
+	.c6_jquery .right {
+		text-align: center;
+	}
+
+	.bm_letterhead {
+		margin-left: 10%;
+	}
+
+	.bm_envelope img {
+		transform: rotate(90deg);
+	}
+
+	.bm_envelope .right {
+		margin-left: 10%;
+	}
+
+	.bm_envelope img:nth-of-type(1) {
+		margin-left: 15%;
+		margin-top: 180px;
+	}
+
+	.bm_envelope img:nth-of-type(2) {
+		top: 38%;
+		left: -18%;
+	}
+
+	.bm_letterhead img:nth-of-type(2) {
+		left: 0;
+	}
+
+	.habco_cover img:last-child,
+	.habco_inside img:last-child,
+	.ond_bzcard img:last-child,
+	.thomson_incover,
+	.thomson_spreads img:last-child,
+	.c6_jquery .half:last-child {
+	  	margin-top: 40px;
+	}
+
+	.bm_coffee_label,
+	.bm_stationery2 {
+		margin-top: 120px;
+	}
+
+	.bm_letterhead {
+		margin-top: 220px;
+	}
+
+	.blue_mountain .left {
+		text-align: center;
+	}
+
+	.info h4 {
+		margin-bottom: 10px;
+	}
+
+	.bm_logo .half:first-child,
+	.summer_sun img,
+	.cti_report2 .half:first-child,
+	.zeifman_package {
+		margin-bottom: 40px;
+	}
+
+	.bm_small_logo .half:first-child,
+	.summer_sun img:last-child {
+		margin-bottom: 0;
+	}
+
+	.bm_bzcard img:last-child,
+	.bm_coffee_label img:last-child,
+	.shore_bzcard2,
+	.shore_bzcard1 img:first-child,
+	.thinkthin_web div:last-child,
+	.zeifman_spread2 {
+		margin-top: 40px;
+	}
+
+	.habco_inside img:last-child {
+		box-shadow: none;
+	}
+
+	.habco h4,
+	.shore_concept2 h4 {
+		margin-right: 40px;
+	}
+	
+	.taniM img:nth-of-type(2) {
+	    margin-bottom: 120px;
+	}
+	
+	.tani_box {
+		z-index: 0;
+	}
+
+	.shore_bzcard2 {
+		box-shadow: none;
+	}
+	
+	.snowbat_xslogos {
+		flex-wrap: wrap;
+	}
+
+	.snowbat_xslogos img {
+		width: calc(33.33% - 13px);
+	}
+
+	.snowbat_xslogos img:nth-child(1),
+	.snowbat_xslogos img:nth-child(2),
+	.snowbat_xslogos img:nth-child(3) {
+		margin-bottom: 20px;
+	}
+	.snowbat_bzcards {
+		width: 50%;
+		top: 25%;
+	}
+
+	.snowbat_bzcards img {
+	    margin-top: 20px;
+	}
+
+	.zeifman_spread1,
+	.zeifman_spread2 {
+		align-self: center;
+	}
+
+	.zeifman_package img:first-of-type {
+		margin-left: 40%;
+	}
+
+	.zeifman_package img:last-of-type {
+		position: absolute;
+		margin-left: 10%;
+		top: 80px;
+	}
+
+	.thomson_icon {
+		display: none;
+	}
+
+	.thomson_cover img {
+		width: 75%;
+	}
+}
+
+@media (max-width: 500px) {
+	figcaption h2,
+	figcaption h5 {
+		left: 30px;
+	}
+
+	figcaption h5 {
+		bottom: 30px;
+	}
+	
+	.bm_envelope img:nth-of-type(1) {
+		margin-top: 160px;
+	}
+}
+
+@media (max-width: 445px) {
+	.cti h2 {
+		bottom: 100px;
+	}
+}
+
+@media (max-width: 420px) {
+	figcaption h2 {
+		line-height: 1.1;
+	}
+
+	.blueMountain h2,
+	.ourNaturalDiet h2,
+	.snowbat h2,
+	.shoreCreative h2 {
+		bottom: 80px;
+	}
+
+	.thinkThin h2 {
+		bottom: 100px;
+	}
+
+	.cti h2 {
+		bottom: 122px;
+	}
+
+	.ond_logo img {
+		display: none;
+	}
+
+	.ond_logo img:last-child {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.quinnyLogo {
+		height: 40px;
+		width: 180px;
+	}
+
+	.Q {
+		top: 7px;
+		left: -65px;
+	}
+
+	.U {
+		height: 65%;
+		top: 12px;
+		left: -46px;
+	}
+
+	.I {
+		top: 7px;
+		left: -25px;
+	}
+
+	.N1 {
+		top: 7px;
+		left: -3px;
+	}
+
+	.N2 {
+		top: 7px;
+		left: 27px;
+	}
+
+	.Y {
+		top: 7px;
+		left: 54px;
+	}
+
+	.C {
+		top: 7px;
+		left: 90px;
+	}
+
+	.bm_envelope img:nth-of-type(1) {
+		margin-top: 150px;
+	}
+
+	.bm_envelope img:nth-of-type(2) {
+		top: 37%;
+	}
+}
+
+@media (max-width: 375px) {
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+	}
+
+	h5 {
+		font-size: 1.5rem;
+	}
+
+	figcaption h2,
+	figcaption h5 {
+		left: 20px;
+	}
+
+	figcaption h5 {
+		bottom: 20px;
+	}
+
+	.info h4 {
+		font-size: 1.6rem;
+	}
+
+	.description p {
+		font-size: 1.7rem;
+	}
+
+	p.credit {
+		font-size: 1.28rem;
+	}
+
+	.blueMountain h2,
+	.ourNaturalDiet h2,
+	.snowbat h2,
+	.shoreCreative h2,
+	.zeifman h2,
+	.c6Chocolates h2,
+	.hrpao h2,
+	.habco h2,
+	.qcPortfolio h2 {
+		bottom: 72px;
+	}
+
+	.cronus h2,
+	.caneDesign h2,
+	.tani h2,
+	.summerSun h2,
+	.thomson h2 {
+		bottom: 47px;
+	}
+
+	.thinkThin h2 {
+		bottom: 90px;
+	}
+
+	.cti h2 {
+		bottom: 112px;
+	}
+
+	header img {
+		height: 36px;
+		margin-top: 14px;
+	}
+
+	.menu {
+		padding-right: 20px
+	}
+	
+	.mobile_main li {
+		margin-right: 20px;
+	}
+
+	.mobile_sub li {
+		margin-right: 0;
+	}
+
+	footer {
+		flex-direction: column;
+		padding: 0;
+	} 
+
+	footer p {
+		font-size: 1.2rem;
+		padding: 0;
+		margin: 20px auto;
+	}
+
+	.left,
+	.right,
+	.center {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	.ond_logo .left,
+	.bm_letterhead .right,
+	.cti_logo .right,
+	.shore_logo .left,
+	.snowbat_logo .left,
+	.qc_logo .left {
+		text-align: left;
+	}
+
+	.bm_logo .half,
+	.bm_stationery1,
+	.bm_bag,
+	.bm_letterhead img,
+	.habco_cover img,
+	.taniM img,
+	.ond_bzcard,
+	.cti_logo,
+	.cti_report1,
+	.cti_report2,
+	.shore_logo,
+	.shore_letterhead1,
+	.shore_letterhead2,
+	.thinkthin_logo,
+	.thomson_spreads img,
+	.thomson_chart,
+	.hrpao_ad,
+	.hrpao_bro1 img,
+	.hrpao_bro2 img,
+	.summer_sun img,
+	.shore_bzcard1,
+	.shore_bzcard2,
+	.c6_web,
+	.c6_jquery .half,
+	.qc_logo,
+	.qc_library,
+	.qc_library img,
+	.qc_sketches,
+	.qc_home,
+	.cronus_home,
+	.cronus_effects div,
+	.cane,
+	.cane_concept1 img,
+	.cane_concept2,
+	.bm_envelope img,
+	.thomson_cover img {
+		width: 100%;
+	}
+
+	.bm_small_logo .half,
+	.bm_cup,
+	.ond_logo,
+	.zeifman_package img,
+	.c6_mobile .one_third {
+		width: 80%;
+	}
+
+	.snowbat_bzcards,
+	.bm_sticker,
+	.snowbat_xslogos img {
+		width: 60%;
+	}
+
+	footer div {
+		width: 20%;
+	}
+
+	footer .line {
+		display: none;
+	}
+
+	.snowbat_bzcards {
+		top: 25%;
+		right: 0;
+	}
+
+	.qc_library img:nth-of-type(3), 
+	.qc_library img:nth-of-type(4), 
+	.qc_library img:nth-of-type(5) {
+	    margin-top: 30px;
+	}
+
+	.bm_envelope .right, 
+	.bm_letterhead,
+	.download p:last-child,
+	.last_div {
+	    margin-left: 0;
+	}	
+
+	.bm_letterhead {
+		margin-left: 4%;
+	}
+
+	.bm_small_logo .half,
+	.c6_mobile img {
+		margin: 0 auto;
+	}
+
+	.bm_sticker {
+		margin: 100px auto;
+	}
+
+	.bm_small_logo .top,
+	.bm_small_logo .bottom,
+	.c6_mobile .one_third:nth-of-type(1),
+	.c6_mobile .one_third:nth-of-type(2) {
+	    padding-bottom: 40px;
+	}
+
+	.bm_small_logo img:last-child {
+		padding-bottom: 0;
+	}
+
+	.cti_report2 .half:first-child {
+		margin-top: 0;
+	}
+	
+	.cti_report2 .half:last-child {
+		margin-top: 100px;
+	}
+	
+	.simplified h4 {
+		margin-top: 60px;
+	}
+
+	.bm_letterhead {
+		margin-top: 180px;
+	}
+
+	.hrpao_bro1 img:first-child,
+	.hrpao_bro2 img:first-child {
+		margin-bottom: 40px;
+	}
+
+	.cane_concept1 img:nth-of-type(1),
+	.cane_concept1 img:nth-of-type(2),
+	.cane_concept1 img:nth-of-type(3),
+	.cane_concept2 img {
+		margin-bottom: 20px;
+	}
+
+	.bm_letterhead img:nth-of-type(1) {
+	    margin-left: 15%;
+	}
+
+	.bm_envelope .right {
+		margin-left: 8%;
+	}
+
+	.bm_letterhead img:nth-of-type(2) {
+	    left: 0;
+	}
+
+	.bm_envelope img:nth-of-type(1) {
+		margin-top: 140px;
+	}
+
+	.bm_envelope img:nth-of-type(2) {
+		top: 35%;
+		left: -20%;
+	}
+
+	.hrpao_bro1 div,
+	.hrpao_bro2 div,
+	.snowbat_xslogos,
+	.c6_mobile div,
+	.cane_concept1 {
+		flex-direction: column;
+	}
+
+	.snowbat_xslogos {
+		align-items: center;
+	}
+
+	.snowbat_xslogos img:nth-child(4),
+	.snowbat_xslogos img:nth-child(5) {
+		margin-bottom: 20px;
+	}
+
+	.zeifman_package img:first-of-type {
+	    margin-left: 20%;
+	    margin-bottom: 100px;
+	}
+
+	.zeifman_package img:last-of-type {
+		margin-left: 0;
+		margin-top: 30%;
+	}
+
+	.qc_wireframes {
+		align-items: center;
+	}
+
+	.download p {
+		text-align: center;
+	}
+}
+
+@media (max-width: 320px) {
+	nav,
+	.wrapper {
+		margin: 0 20px;
+	}
+
+	#subnavigation a {
+		right: -20px;
+	}
+
+	.load_project p {
+		font-size: 1.5rem;
+	}
+
+	.load_project svg {
+		padding-top: 3px;
+	}
+}
